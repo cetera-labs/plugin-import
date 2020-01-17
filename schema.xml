@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema>
+
+<table name="import_templates">
+    <field name="id" type="int(11)" null="0" auto_increment="1" />
+    <field name="name" type="varchar(100)" null="0"  />
+    <field name="data" type="text" null="0" />
+    <key name="PRIMARY" unique="1">
+        <column name="id" />
+    </key>
+    <key name="import_type" unique="1">
+		<column name="name" />
+    </key>	
+</table>
+
+</schema>

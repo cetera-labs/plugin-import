@@ -1,0 +1,29 @@
+{
+    "name": "cetera-labs/plugin-sale",
+    "description": "Cetera CMS Import Plugin",
+    "type": "cetera-cms-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Romanov",
+            "email": "nicodim@mail.ru",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+    },
+    
+    "minimum-stability": "dev",
+    
+    "autoload": {
+        "psr-0": { 
+			"Import\\": "classes/"
+		}
+    },
+
+    "extra": {
+        "name": "import",
+        "title": "Импорт материалов",
+        "description": ""
+    }
+}

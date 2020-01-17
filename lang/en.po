@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Модуль \"Торговля\"\n"
+"POT-Creation-Date: 2017-05-03 15:28+0300\n"
+"PO-Revision-Date: 2017-05-03 15:31+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _;translate\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ext/Panel.js:33
+msgid "Раздел"
+msgstr "Section"
+
+#: ext/Panel.js:91
+msgid "Настройки"
+msgstr "Setup"
+
+#: ext/Panel.js:101
+msgid "Сохраненные шаблоны"
+msgstr "Saved templates"
+
+#: ext/Panel.js:121
+msgid "Использовать"
+msgstr "Use"
+
+#: ext/Panel.js:137 ext/Panel.js:138
+msgid "Сохранить"
+msgstr "Save"
+
+#: ext/Panel.js:152
+msgid "Удалить шаблон"
+msgstr "Remove template"
+
+#: ext/Panel.js:164
+msgid "Формат данных"
+msgstr "Data format"
+
+#: ext/Panel.js:172
+msgid "Тип материалов"
+msgstr "Materials type"
+
+#: ext/Panel.js:189
+msgid "Источник данных"
+msgstr "Data source"
+
+#: ext/Panel.js:208
+msgid "Настройки источника данных"
+msgstr "Data source setup"
+
+#: ext/Panel.js:217
+msgid "Настройки импорта"
+msgstr "Import setup"
+
+#: ext/Panel.js:227
+msgid "Уникальное поле материала"
+msgstr "Unique material field"
+
+#: ext/Panel.js:233
+msgid "Материалы, которых нет в источнике"
+msgstr "Materials not found in data source"
+
+#: ext/Panel.js:234
+msgid "деактивировать"
+msgstr "unpublish"
+
+#: ext/Panel.js:239
+msgid "удалить"
+msgstr "remove"
+
+#: ext/Panel.js:244
+msgid "не трогать"
+msgstr "skip"
+
+#: ext/Panel.js:258 ext/Panel.js:296 ext/Panel.js:508
+msgid "Сохранить шаблон"
+msgstr "Save template"
+
+#: ext/Panel.js:265
+msgid "Дальше >"
+msgstr "Next >"
+
+#: ext/Panel.js:273
+msgid "Поля"
+msgstr "Fields"
+
+#: ext/Panel.js:285
+msgid "< Назад"
+msgstr "< Back"
+
+#: ext/Panel.js:303
+msgid "Сохранить как новый шаблон ..."
+msgstr "Save as new template..."
+
+#: ext/Panel.js:308
+msgid "Начать импорт >>"
+msgstr "Start import >>>"
+
+#: ext/Panel.js:315
+msgid "Результат"
+msgstr "Result"
+
+#: ext/Panel.js:375
+msgid "Подождите ..."
+msgstr "Wait ..."
+
+#: ext/Panel.js:405
+msgid "Ошибка"
+msgstr "Error"
+
+#: ext/Panel.js:465
+msgid "фильтр"
+msgstr "filter"
+
+#: ext/Panel.js:480
+msgid ""
+"Если установлен фильтр, то импортируются элементы, значение поля которых "
+"совпадает с фильтром. Допускаются регулярные выражения."
+msgstr ""
+"If the filter is defined, only matched items will be imported. REGEXP "
+"allowed."
+
+#: ext/Panel.js:508
+msgid "Введите имя шаблона"
+msgstr "Template name"
+
+#: classes/Import/DataSource/CSV.php:18 classes/Import/DataSource/XML.php:20
+msgid "Файл"
+msgstr "File"
+
+#: classes/Import/DataSource/CSV.php:24
+msgid "Кодировка"
+msgstr "Encoding"
+
+#: classes/Import/DataSource/CSV.php:32
+msgid "Разделитель полей"
+msgstr "Fields delimeter"
+
+#: classes/Import/DataSource/CSV.php:40
+msgid "запятая"
+msgstr "comma"
+
+#: classes/Import/DataSource/CSV.php:47
+msgid "табуляция"
+msgstr "tab"
+
+#: classes/Import/DataSource/CSV.php:53
+msgid "Первая строка содержит имена полей"
+msgstr "Column headers in the first line"
+
+#: classes/Import/DataSource/CommerceML2.php:25
+msgid "Файл ZIP"
+msgstr "ZIP file"
+
+#: classes/Import/DataSource/CommerceML2.php:31
+msgid "Файл товары"
+msgstr "Goods file"
+
+#: classes/Import/DataSource/CommerceML2.php:38
+msgid "Файл цены"
+msgstr "Offers file"
+
+#: classes/Import/DataSource/MoySklad.php:37
+msgid "пересчитывать цены, включив НДС"
+msgstr "recalculate prices, include VAT"
+
+#: classes/Import/DataSource/XML.php:26
+msgid "Элемент с данными материала"
+msgstr "XML-element that contains data to import"
+
+#: classes/Import/DataSource/XML.php:85
+msgid "Не найден элемент"
+msgstr "Element is not found"
+
+#: config.php:8
+msgid "Файл CSV"
+msgstr "CSV file"
+
+#: config.php:13
+msgid "Файл XML"
+msgstr "XML file"
+
+#: config.php:23
+msgid "Мой склад (moysklad.ru)"
+msgstr ""
+
+#: config.php:31
+msgid "Импорт"
+msgstr "Import"
+
+#: data_fields.php:6
+msgid "пропустить"
+msgstr "skip"
+
+#: data_fields.php:7
+msgid "Активность"
+msgstr "Active"
+
+#: data_fields.php:9
+msgid "Название подраздела - Уровень 1"
+msgstr "Section name - Level 1"
+
+#: data_fields.php:10
+msgid "Название подраздела - Уровень 2"
+msgstr "Section name - Level 2"
+
+#: data_fields.php:11
+msgid "Название подраздела - Уровень 3"
+msgstr "Section name - Level 3"
+
+#: data_fields.php:12
+msgid "Alias подраздела - Уровень 1"
+msgstr "Section alias - Level 1"
+
+#: data_fields.php:13
+msgid "Alias подраздела - Уровень 2"
+msgstr "Section alias - Level 2"
+
+#: data_fields.php:14
+msgid "Alias подраздела - Уровень 3"
+msgstr "Section alias - Level 3"
+
+#~ msgid "Акт."
+#~ msgstr "Active"
+
+#~ msgid "Сорт."
+#~ msgstr "Sort"
+
+#~ msgid "Название"
+#~ msgstr "Name"
+
+#~ msgid "Новый способ доставки"
+#~ msgstr "New delivery"
+
+#~ msgid "Товары"
+#~ msgstr "Goods"
+
+#~ msgid "Управление магазином"
+#~ msgstr "Sale management"
+
+#~ msgid "Магазин"
+#~ msgstr "Shop"
+
+#~ msgid "Заказы"
+#~ msgstr "Orders"
+
+#~ msgid "Способы доставки"
+#~ msgstr "Delivery methods"

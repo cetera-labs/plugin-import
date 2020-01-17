@@ -1,0 +1,9 @@
+{
+    "version": "5.7",
+    "cms_version_min": "3.35.3",
+	"title": "Import data",
+    "title_ru": "Импорт",
+	"description": "",
+    "description_ru": "Импорт материалов из файлов формата CSV, XML, CommerceML2. Импорт товаров из системы МойСклад",
+    "author": "<a href='http://www.cetera.ru'>Roman Romanov</a>"
+}
