@@ -1,5 +1,5 @@
 {
-    "name": "cetera-labs/plugin-sale",
+    "name": "cetera-labs/plugin-import",
     "description": "Cetera CMS Import Plugin",
     "type": "cetera-cms-plugin",
     "license": "MIT",
