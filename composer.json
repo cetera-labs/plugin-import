@@ -1,4 +1,4 @@
-{
+п»ї{
     "name": "cetera-labs/plugin-import",
     "description": "Cetera CMS Import Plugin",
     "type": "cetera-cms-plugin",
@@ -23,7 +23,7 @@
 
     "extra": {
         "name": "import",
-        "title": "Импорт материалов",
+        "title": "РРјРїРѕСЂС‚ РјР°С‚РµСЂРёР°Р»РѕРІ",
         "description": ""
     }
 }
