@@ -172,7 +172,7 @@ Ext.define('Plugin.import.Panel', {
 								fieldLabel: _('Тип материалов'),
 								allowBlank: false,
 								name: 'materials_type',
-								linkable: 1,
+								linkable: 0,
 								listeners: {
 									select: {
 										fn: function(combo){

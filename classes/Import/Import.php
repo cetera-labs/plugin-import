@@ -138,16 +138,26 @@ class Import
 					
                     $res['_current_line']++;
 
-                    $default_data = array(
-                        'name' => 'Импортированный материал ' . $res['_current_line'],
-                        'idcat' => $catalog->id,
-                        'autor' => \Cetera\Application::getInstance()->getUser()->id,
-                        'alias' => time() . '_' . rand(10000, 99999),
-                    );
-
-                    $data = array(
-						'publish' => 1,
-					);
+                    if ($params['materials_type'] == \Cetera\User::TYPE) {
+                        $default_data = array(
+                            'name' => 'Импортированный пользователь ' . $res['_current_line'],
+                            'login' => 'user_'.time() . '_' . rand(10000, 99999),
+                        );
+                        $data = array(
+                            'disabled' => 0,
+                        );                          
+                    }
+                    else {
+                        $default_data = array(
+                            'name' => 'Импортированный материал ' . $res['_current_line'],
+                            'idcat' => $catalog->id,
+                            'autor' => \Cetera\Application::getInstance()->getUser()->id,
+                            'alias' => time() . '_' . rand(10000, 99999),
+                        );
+                        $data = array(
+                            'publish' => 1,
+                        );                        
+                    }
 
                     $path = array();
 
@@ -316,7 +326,14 @@ class Import
 
                     $search_field = $params['unique_field'];
                     if ($data[$search_field]) {
-                        $list = $catalog->getMaterials()->subFolders()->unpublished()->where($search_field . '=:' . $search_field)->setParameter($search_field, $data[$search_field]);
+                        
+                        if ($params['materials_type'] == \Cetera\User::TYPE) {
+                            $list = \Cetera\User::enum()->where($search_field . '=:' . $search_field)->setParameter($search_field, $data[$search_field]);
+                        }
+                        else {
+                            $list = $catalog->getMaterials()->subFolders()->unpublished()->where($search_field . '=:' . $search_field)->setParameter($search_field, $data[$search_field]);
+                        }
+                        
                         if (count($list)) {
                             $m = $list->current();
                             $data = array_merge($m->fields, $data);
