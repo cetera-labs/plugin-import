@@ -335,6 +335,12 @@ class Import
                         }
                         
                         if (count($list)) {
+                            
+                            // если установлена опция 'Пропускать существующие', то пропускаем
+                            if ($params['skip_exist']) {
+                                continue;
+                            }                            
+                            
                             $m = $list->current();
                             $data = array_merge($m->fields, $data);
 							unset($data['type']);													

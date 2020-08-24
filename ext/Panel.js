@@ -32,7 +32,7 @@ Ext.define('Plugin.import.Panel', {
 		this.catalog = Ext.create('Cetera.field.Folder',{
 			fieldLabel: _('Раздел'),
 			name: 'catalog',
-			allowBlank: false,
+			allowBlank: true,
 			disabled: 1
 		});	
 				
@@ -250,6 +250,11 @@ Ext.define('Plugin.import.Panel', {
 									xtype: 'checkbox',
 									fieldLabel: _('Не создавать новые материалы'),
 									name: 'no_new_materials',
+									inputValue: 1
+								},{
+									xtype: 'checkbox',
+									fieldLabel: _('Пропускать существующие'),
+									name: 'skip_exist',
 									inputValue: 1
 								}
 							]
