@@ -250,12 +250,14 @@ Ext.define('Plugin.import.Panel', {
 									xtype: 'checkbox',
 									fieldLabel: _('Не создавать новые материалы'),
 									name: 'no_new_materials',
-									inputValue: 1
+									inputValue: 1,
+                                    uncheckedValue: 0
 								},{
 									xtype: 'checkbox',
 									fieldLabel: _('Пропускать существующие'),
 									name: 'skip_exist',
-									inputValue: 1
+									inputValue: 1,
+                                    uncheckedValue: 0
 								}
 							]
 						}

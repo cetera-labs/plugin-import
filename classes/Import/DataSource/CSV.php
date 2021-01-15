@@ -54,6 +54,7 @@ class CSV extends  DataSourceAbstract {
 				'checked'    => true,
 				'name'       => 'source_skip_first',
 				'inputValue' => 1,
+                'uncheckedValue' => 0,
 			),
 		);
 	}	

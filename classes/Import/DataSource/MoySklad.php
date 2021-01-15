@@ -36,6 +36,7 @@ class MoySklad extends DataSourceAbstract
 				'hideEmptyLabel' => false,
 				'boxLabel'       => $t->_('пересчитывать цены, включив НДС'),
 				'name'           => 'calculate_vat',
+                'uncheckedValue' => 0,
 			),			
 		);
 	}
