@@ -22,11 +22,12 @@ $stmt = $query->execute();
 while ($row = $stmt->fetch())
 {    
 	$params = unserialize($row['data']);
-	$params['material_type'] = (int)$params['material_type'];
+    if (array_key_exists('material_type',$params)) {
+        $params['material_type'] = (int)$params['material_type'];
+    }
 	$fields = array();
 	$setup = array();
-	foreach($params as $id => $value)
-	{
+	foreach($params as $id => $value) {
 		if (substr($id,0,7) == 'fields_' || substr($id,0,7) == 'filter_')
 			$fields[$id] = $value;
 			else $setup[$id] = $value;
