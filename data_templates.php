@@ -3,8 +3,7 @@ include('common_bo.php');
 
 $conn = \Cetera\Application::getInstance()->getDbConnection();
 
-if ($_REQUEST['action'] == 'destroy')
-{
+if (isset($_REQUEST['action']) && $_REQUEST['action'] == 'destroy') {
 	$d = json_decode(file_get_contents("php://input"), true);
 	
 	$conn->delete('import_templates', array(
