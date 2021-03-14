@@ -30,6 +30,7 @@ if ( $this->getBo() )
 		'position' => MENU_SITE,
         'name' 	   => $t->_('Импорт'),
         'icon'     => '/cms/plugins/import/images/import.gif',
+        'iconCls'  => 'x-fa fa-file-import',
 		'class'    => 'Plugin.import.Panel',
     ));
 
