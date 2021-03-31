@@ -23,8 +23,8 @@ $t->addTranslation(__DIR__.'/lang');
 	'name' => $t->_('Мой склад (moysklad.ru)')
 ));
 
-if ( $this->getBo() )
-{
+if ( $this->getBo() && $this->getUser() && $this->getUser()->isAdmin() ) {
+
     $this->getBo()->addModule(array(
 		'id'       => 'import',
 		'position' => MENU_SITE,
