@@ -1,6 +1,6 @@
 {
     "name": "cetera-labs/plugin-import",
-    "description": "Cetera CMS Import Plugin",
+    "description": "Fastsite CMS Import Plugin",
     "type": "cetera-cms-plugin",
     "license": "MIT",
     "authors": [
